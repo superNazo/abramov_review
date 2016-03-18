@@ -18,7 +18,7 @@ def test_task
   task.argumentize(number)
   puts task.just_run_it
 
-  puts 'To show author and description - type info, to skip - enter'
+  puts "To show author and description - type 'i', to skip - enter"
   if gets.chomp == 'i'
     puts task.show_author
     puts task.show_desc
