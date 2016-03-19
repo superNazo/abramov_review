@@ -209,9 +209,9 @@ def abramov_330(num)
   perfects = []
 
   def is_perf(n)
-    divs = []
-    (1..Math.sqrt(n)).each { |i| divs << i << n / i if n % i == 0 }
-    divs.inject { |sum, n| sum += n } == 2 * n
+    dividers = []
+    (1..Math.sqrt(n)).each { |i| dividers << i << n / i if n % i == 0 }
+    dividers.inject { |sum, n| sum += n } == 2 * n
   end
 
   (2..num).each { |n| perfects << n if is_perf(n) }
