@@ -43,7 +43,7 @@ module Abramov
   # 332
   def abramov_332(number)
     array = []
-    for i in 0..3
+    (0..3).each do |i|
       array[i] = Math.sqrt(number).floor
       number = (number - array[i]**2).abs
     end
@@ -206,16 +206,16 @@ end
 
 # find all perfect numbers up to the inputed one
 def abramov_330(num)
-	perfects = []
+  perfects = []
 
-	def is_perf(n)
-		divs = []
-		(1..Math.sqrt(n)).each { |i| divs << i << n / i if n % i == 0 }
-		divs.inject { |sum, n| sum += n } == 2 * n
-	end
+  def is_perf(n)
+    divs = []
+    (1..Math.sqrt(n)).each { |i| divs << i << n / i if n % i == 0 }
+    divs.inject { |sum, n| sum += n } == 2 * n
+  end
 
-	(2..num).each { |n| perfects << n if is_perf(n) }
-	"Perfect numbers up to #{num}: \n#{perfects}"
+  (2..num).each { |n| perfects << n if is_perf(n) }
+  "Perfect numbers up to #{num}: \n#{perfects}"
 end
 
 #Krainyk Oleh
