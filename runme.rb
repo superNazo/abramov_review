@@ -1,10 +1,4 @@
-require_relative 'abramov_module'
-require_relative 'library'
 require_relative 'task'
-
-# test = Task.new('86a')
-# p test.show_author
-# p test.show_desc
 
 def test_task
   puts 'Type the task id u want to run: '
@@ -15,13 +9,12 @@ def test_task
   puts 'Type your number: '
   number = gets.chomp.to_i
 
-  task.argumentize(number)
+  task.user_input=number
   puts task.just_run_it
 
   puts "To show author and description - type 'i', to skip - enter"
   if gets.chomp == 'i'
-    puts task.show_author
-    puts task.show_desc
+    task.show(:id, :author, :description)
   end
 end
 
