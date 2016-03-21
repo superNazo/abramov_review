@@ -5,17 +5,13 @@ def test_task
   task_id = gets.chomp
 
   task = Task.new(task_id)
+  puts task.show(:author, :description)
 
   puts 'Type your number: '
   number = gets.chomp.to_i
 
   task.user_input=number
   puts task.just_run_it
-
-  puts "To show author and description - type 'i', to skip - enter"
-  if gets.chomp == 'i'
-    task.show(:id, :author, :description)
-  end
 end
 
 def continue?
