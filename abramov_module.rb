@@ -185,26 +185,23 @@ def task(num)
   puts "#{target} has the biggest numbers of deviders: #{max}"
 end
 
-# find sum of digits of a number
+# Find sum of digits of a number
 def abramov_86a(num)
   sum = 0
-  num.to_s.split(//).each { |n| sum += n.to_i }
-  "Sum of the digits is: #{sum}"
+  num.to_s.split(//).inject(0) { |sum, n| sum += n.to_i }
 end
 
-# count quantity of digits of a number
+# Count quantity of digits of a number
 def abramov_86b(num)
   counter = num.to_s.split(//).length
-  "Quantity of the digits is: #{counter}"
 end
 
-# find the first digit of the number
+# Find the first digit of the number
 def abramov_86c(num)
   digit = num.to_s.split(//).first
-  "The first digit is: #{digit}"
 end
 
-# find all perfect numbers up to the inputed one
+# Find all perfect numbers up to the inputed one (max input value - 10 000)
 def abramov_330(num)
   perfects = []
 
@@ -215,12 +212,12 @@ def abramov_330(num)
   end
 
   (2..num).each { |n| perfects << n if is_perf(n) }
-  "Perfect numbers up to #{num}: \n#{perfects}"
+  perfects
 end
 
 #Krainyk Oleh
 # Given m and n integers. Compute sum of m last digits of n.
-def abramove_87(n, m)
+def abramov_87(n, m)
   res = 0
 
   while m > 0
@@ -235,7 +232,7 @@ end
 
 # Given m and n integers. Compute all least common multiple
 # of m,n that are less than m*n.
-def abramove226(n, m)
+def abramov_226(n, m)
   for numb in 0..n * m
     puts numb if (numb % n == 0) && (numb % m == 0)
   end

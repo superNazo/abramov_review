@@ -1,0 +1,60 @@
+task_86a:
+  description: Calculate sum of the digits of the number (1 argument)
+  author: Nazarii Ivankiv
+task_86b:
+  description: Calculate quantity of digits (1 argument)
+  author: Nazarii Ivankiv
+task_86c:
+  description: Find 1st digit of the number (1 argument)
+  author: Nazarii Ivankiv
+task_87:
+  description: Compute sum of N last digits of input (2args)
+  author: Krainyk Oleg
+task_88a:
+    description: check for id 3 in square of your input (1arg)
+    author: Kirilov Kirill
+task_88b:
+    description: reverse all digits in your array (1arg)
+    author: Kirilov Kirill
+task_88c:
+    description: add digit 1 before and after input
+    author: Evgen Uzhva
+task_88d:
+    description: switch first and last digit in input
+    author: Evgen Uzhva
+task_107:
+    description: get even id, s where 4k is less than input (input has to be bigger than 1)
+    author: Evgen Uzhva
+task_178b:
+    description: get ids кратные 3 and not кратные 5 in range (from,to)
+    author: Anatolii Ibragimov
+task_178c:
+    description: find ids that are squares of even ids in range (from,to)
+    author: Anatolii Ibragimov
+task_182:
+    description: find q-ty and sum of ids that evenly devide by 5 bot not by 7
+    author: Sergio
+task_226:
+    description: Compute all natural mutual aliquot of two inputs, that are less than m *n. (2 args)
+    author: Krainyk Oleg
+task_243b:
+    description: find all pairs where y.square + x.square equals input
+    author: Evgen Uzhva
+task_322:
+    description: find a id with most deviders within range (..to)
+    author: Kirilov Kirill
+task_323:
+    description: get all natural ids smaller that input and equally plain with each other
+    author: Sergio
+task_330:
+    description: Find all perfect numbers up to your one (max - 10 000)
+    author: Nazarii Ivankiv
+task_554:
+    description: findning private hypotenuse (1arg)
+    author: Anatolii Ibragimov
+task_560:
+    description: find ids equaling the sum of each other's deviders
+    author: Sergio
+task_559:
+    description: find all Mersenne ids smaller than input (1arg)
+    author: Krainyk Oleg
