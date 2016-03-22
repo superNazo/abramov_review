@@ -1,20 +1,20 @@
 task_86a:
-  description: Calculate sum of the digits of the number (1 argument)
+  description: Calculate sum of the digits of the number
   author: Nazarii Ivankiv
 task_86b:
-  description: Calculate quantity of digits (1 argument)
+  description: Calculate quantity of digits
   author: Nazarii Ivankiv
 task_86c:
-  description: Find 1st digit of the number (1 argument)
+  description: Find 1st digit of the number
   author: Nazarii Ivankiv
 task_87:
   description: Compute sum of N last digits of input (2args)
   author: Krainyk Oleg
 task_88a:
-    description: check for id 3 in square of your input (1arg)
+    description: check for number 3 in square of your input
     author: Kirilov Kirill
 task_88b:
-    description: reverse all digits in your array (1arg)
+    description: reverse all digits in your array
     author: Kirilov Kirill
 task_88c:
   description: add digit 1 before and after input
@@ -22,20 +22,23 @@ task_88c:
 task_88d:
   description: switch first and last digit in input
   author: Anton Romaniv
-task_332:
-  description: find such positive x,y,z,t that input =  x^2 + y^2 + z^2 + t^2
-  author: Anton Romaniv
 task_107:
     description: get even id, s where 4k is less than input (input has to be bigger than 1)
     author: Evgen Uzhva
 task_178b:
-    description: get ids кратные 3 and not кратные 5 in range (from,to)
+    description: get ids кратные 3 and not кратные 5 in range (2args)
     author: Anatolii Ibragimov
 task_178c:
-    description: find ids that are squares of even ids in range (from,to)
+    description: find ids that are squares of even ids in range (2args)
     author: Anatolii Ibragimov
+task_178d:
+    description: Find a count of a(k), that 2^k < a(k) < k!
+    author: Viktoriya Ladanay
+task_178g:
+    description: Find a count of a(k), that a(k) < (a(k-1) + a(k+1))/2
+    author: Viktoriya Ladanay
 task_182:
-    description: find q-ty and sum of ids that evenly devide by 5 bot not by 7
+    description: find q-ty and sum of  numbers that evenly devide by 5 bot not by 7
     author: Sergio
 task_226:
     description: Compute all natural mutual aliquot of two inputs, that are less than m * n. (2 args)
@@ -44,29 +47,26 @@ task_243b:
     description: find all pairs where y.square + x.square equals input
     author: Evgen Uzhva
 task_322:
-    description: find a id with most deviders within range (..to)
+    description: find a number with most deviders within range
     author: Kirilov Kirill
 task_323:
     description: get all natural ids smaller that input and equally plain with each other
     author: Sergio
 task_330:
-    description: Find all perfect numbers up to your one (max - 10 000)
+    description: Find all perfect numbers up to your one
     author: Nazarii Ivankiv
+task_332:
+  description: find such positive x,y,z,t that input =  x^2 + y^2 + z^2 + t^2
+  author: Anton Romaniv
 task_554:
-    description: findning private hypotenuse (1arg)
+    description: findning private hypotenuse
     author: Anatolii Ibragimov
 task_560:
-    description: find ids equaling the sum of each other's deviders
+    description: find numbers equaling the sum of each other's deviders (2args)
     author: Sergio
 task_559:
-    description: find all Mersenne ids smaller than input (1arg)
+    description: find all Mersenne numbers smaller than input
     author: Krainyk Oleg
-task_178d:
-    description: Find a count of a(k), that 2^k < a(k) < k!
-    author: Viktoriya Ladanay
-task_178g:
-    description: Find a count of a(k), that a(k) < (a(k-1) + a(k+1))/2
-    author: Viktoriya Ladanay
 task_555:
     description: Get first n rows of pascal triangle
     author: Viktoriya Ladanay
