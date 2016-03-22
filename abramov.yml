@@ -38,7 +38,7 @@ task_182:
     description: find q-ty and sum of ids that evenly devide by 5 bot not by 7
     author: Sergio
 task_226:
-    description: Compute all natural mutual aliquot of two inputs, that are less than m *n. (2 args)
+    description: Compute all natural mutual aliquot of two inputs, that are less than m * n. (2 args)
     author: Krainyk Oleg
 task_243b:
     description: find all pairs where y.square + x.square equals input
@@ -61,3 +61,12 @@ task_560:
 task_559:
     description: find all Mersenne ids smaller than input (1arg)
     author: Krainyk Oleg
+task_178d:
+    description: Find a count of a(k), that 2^k < a(k) < k!
+    author: Viktoriya Ladanay
+task_178g:
+    description: Find a count of a(k), that a(k) < (a(k-1) + a(k+1))/2
+    author: Viktoriya Ladanay
+task_555:
+    description: Get first n rows of pascal triangle
+    author: Viktoriya Ladanay
