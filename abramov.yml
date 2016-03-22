@@ -17,14 +17,14 @@ task_88b:
     description: reverse all digits in your array (1arg)
     author: Kirilov Kirill
 task_88c:
-    description: add digit 1 before and after input
-    author: Anton Romaniv
+  description: add digit 1 before and after input
+  author: Anton Romaniv
 task_88d:
-    description: switch first and last digit in input
-    author: Anton Romaniv
+  description: switch first and last digit in input
+  author: Anton Romaniv
 task_332:
-    description: find such positive x,y,z,t that input =  x^2 + y^2 + z^2 + t^2
-    author: Anton Romaniv
+  description: find such positive x,y,z,t that input =  x^2 + y^2 + z^2 + t^2
+  author: Anton Romaniv
 task_107:
     description: get even id, s where 4k is less than input (input has to be bigger than 1)
     author: Evgen Uzhva
