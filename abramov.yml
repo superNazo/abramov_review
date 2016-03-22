@@ -50,7 +50,7 @@ task_322:
     description: find a number with most deviders within range
     author: Kirilov Kirill
 task_323:
-    description: get all natural ids smaller that input and equally plain with each other
+    description: get all natural ids smaller that input and equally plain (Coprime integers) with each other
     author: Sergio
 task_330:
     description: Find all perfect numbers up to your one

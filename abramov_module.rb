@@ -49,17 +49,13 @@ module Abramov
 
 
   #Sergiy
-  def abr_182(x)
-    a = []
-    for_v = []
-    sum_of_dig = []
-    x.times { a.push Random.rand(100) }
-    a.each { |v| v % 5 == 0 && v % 7 != 0 ? for_v << v : 0 }
-    sum_of_dig << for_v.length
-    sum = 0
-    for_v.each { |s| sum += s }
-    puts sum_of_dig.to_s
+  def abramov_182(x)
+    arr_for_v = (1..x).to_a.map { |v| v % 5 == 0 && v % 7 != 0 ? v : nil }.compact
+    sum = arr_for_v.inject(0, :+)
+    puts "The number of digits is: #{arr_for_v.length}"
+    puts "The sum of digits is: #{sum}"
   end
+
 
   ###
   def count_divs(n)
@@ -87,8 +83,9 @@ module Abramov
     dvs_of_n = g_all(n)
     result = []
     (2..n - 1).to_a.each { |e| (g_all(e) & dvs_of_n).max == 1 ? result << e : 0 }
-    puts result
+    puts "Coprime and natural integers are #{result}"
   end
+
 
   #Anatolii Abramove178(b,c)
   def Abramove178_b
