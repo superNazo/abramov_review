@@ -27,17 +27,14 @@ module Abramov
 
   # 88с
   def abramov_88c(number)
-    number = number.to_s.split
-    number.unshift('1').push('1')
-    number = number.join.to_i
-    puts "Result: #{number}"
+    number.to_s.split.unshift('1').push('1').join.to_i
   end
 
   # 88d
   def abramov_88d(number)
     digits = number.to_s.split(//)
     digits[0], digits[-1] = digits[-1], digits[0]
-    puts "Result number : #{digits.join.to_i}"
+    digits.join.to_i
   end
 
   # 332
@@ -47,7 +44,7 @@ module Abramov
       array[i] = Math.sqrt(number).floor
       number = (number - array[i]**2).abs
     end
-    puts "Result: #{array}"
+    array
   end
 
 
