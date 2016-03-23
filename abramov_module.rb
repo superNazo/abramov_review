@@ -86,53 +86,30 @@ module Abramov
     puts "Coprime and natural integers are #{result}"
   end
 
-
-  #Anatolii Abramove178(b,c)
-  def Abramove178_b
-    print "enter the key: "
-    key = gets.to_i
-    a = []
-
-    key.times do |n|
-      a.push Random.rand(100)
-    end
-
-    print "Array: #{a}"
-    puts "\n\n======================== FIRST TASK ======================"
-
-    a.each do |v|
-      if v%3 == 0 && v%5
-        puts "numbers divisible by 3 and not divisible by 5: #{v}"
-      end
-    end
-    return a
+  #178b
+  def abramov_178b(n)
+    result = []
+    (1..n).each { |v| result.push(v) if v % 3 == 0 && v % 5 != 0 }
+    result
   end
 
-  def Abramove178_c(a)
-    puts "\n\n====================== NEXT TASK ======================"
-    a.each do |v|
-      if v!=0 && v%2 == 0 && Math.sqrt(v)%2 == 0
-        puts "squares of even numbers: #{v}"
-      end
-    end
+  #178c
+  def abramov_178c(n)
+    result = []
+    (1..n).each { |v| result.push(v) if v.even? && Math.sqrt(v) % 2 == 0 }
+    result
   end
 
-  #Abramove178_c(Abramove178_b())
-
-  #Anatolii 554
-  def Abramove554
-    print "enter n: "
-    n = gets.to_i
-
+  #554
+  def abramov_554(n)
+    result = []
     (1..n).each do |a|
-      (1..n).each do |b|
-        c = Math.sqrt((a*a)+(b*b)) #finding hypotenuse#
-        if (a<=b)&&(b<=c)&&(c<=n)&&((c*c)%c == 0)
-          print "#{a} #{b} #{c.to_i}\n"
-        end
+      (a..n).each do |b|
+        c = Math.sqrt((a * a) + (b * b))
+        result.push([a, b, c.to_i]) if c <= n.to_i && c % 1 == 0
       end
-
     end
+    result
   end
 
   #Kyrylov Kyryll
