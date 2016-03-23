@@ -181,7 +181,6 @@ module Abramov
 
   # Find sum of digits of a number
   def abramov_86a(num)
-    sum = 0
     num.to_s.split(//).inject(0) { |sum, n| sum += n.to_i }
   end
 
