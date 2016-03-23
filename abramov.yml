@@ -11,11 +11,11 @@ task_87:
   description: Compute sum of N last digits of input (2args)
   author: Krainyk Oleg
 task_88a:
-    description: check for number 3 in square of your input
-    author: Kirilov Kirill
+  description: check for number 3 in square of your input
+  author: Kirilov Kirill
 task_88b:
-    description: reverse all digits in your array
-    author: Kirilov Kirill
+  description: reverse all digits in your array
+  author: Kirilov Kirill
 task_88c:
   description: add digit 1 before and after input
   author: Anton Romaniv
@@ -23,8 +23,8 @@ task_88d:
   description: switch first and last digit in input
   author: Anton Romaniv
 task_107:
-    description: get even id, s where 4k is less than input (input has to be bigger than 1)
-    author: Evgen Uzhva
+  description: get even id, s where 4k is less than input (input has to be bigger than 1)
+  author: Evgen Uzhva
 task_178b:
   description: find numbers divisible by 3 and not divisible by 5 from 1 to user's input
   author: Anatolii Ibrahimov
@@ -32,26 +32,26 @@ task_178c:
   description: find numbers that are squares of even numbers from 1 to user's input
   author: Anatolii Ibrahimov
 task_178d:
-    description: Find a count of a(k), that 2^k < a(k) < k!
-    author: Viktoriya Ladanay
+  description: Find a count of a(k), that 2^k < a(k) < k!
+  author: Viktoriya Ladanay
 task_178g:
-    description: Find a count of a(k), that a(k) < (a(k-1) + a(k+1))/2
-    author: Viktoriya Ladanay
+  description: Find a count of a(k), that a(k) < (a(k-1) + a(k+1))/2
+  author: Viktoriya Ladanay
 task_182:
-    description: find q-ty and sum of  numbers that evenly devide by 5 bot not by 7
-    author: Sergio
+  description: find q-ty and sum of  numbers that evenly devide by 5 bot not by 7
+  author: Sergio
 task_226:
-    description: Compute all natural mutual aliquot of two inputs, that are less than m * n. (2 args)
-    author: Krainyk Oleg
+  description: Compute all natural mutual aliquot of two inputs, that are less than m * n. (2 args)
+  author: Krainyk Oleg
 task_243b:
-    description: find all pairs where y.square + x.square equals input
-    author: Evgen Uzhva
+  description: find all pairs where y.square + x.square equals input
+  author: Evgen Uzhva
 task_322:
-    description: find a number with most deviders within range
-    author: Kirilov Kirill
+  description: find a number with most deviders within range
+  author: Kirilov Kirill
 task_323:
-    description: get all natural ids smaller that input and equally plain (Coprime integers) with each other
-    author: Sergio
+  description: get all natural ids smaller that input and equally plain (Coprime integers) with each other
+  author: Sergio
 task_330:
   description: Find all perfect numbers up to user's input
   author: Nazarii Ivankiv
@@ -62,11 +62,11 @@ task_554:
   description: Find all Pythagoreon triples up to user's input
   author: Anatolii Ibrahimov
 task_560:
-    description: find numbers equaling the sum of each other's deviders (2args)
-    author: Sergio
+  description: find numbers equaling the sum of each other's deviders (2args)
+  author: Sergio
 task_559:
-    description: find all Mersenne numbers smaller than input
-    author: Krainyk Oleg
+  description: find all Mersenne numbers smaller than input
+  author: Krainyk Oleg
 task_555:
-    description: Get first n rows of pascal triangle
-    author: Viktoriya Ladanay
+  description: Get first n rows of pascal triangle
+  author: Viktoriya Ladanay

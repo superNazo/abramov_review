@@ -271,7 +271,7 @@ module Abramov
         arr << count
         k += 1
       end
-      p arr
+      p arr.join(" ")
     end
     'triangle'
   end
