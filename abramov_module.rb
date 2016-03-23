@@ -129,8 +129,9 @@ module Abramov
   # Abramov 88-B
   # Reverse your number
   def task(number)
+    number = number.to_s
     number.reverse!
-
+    number = number.to_i
     puts "your number is now reversed : #{number}"
   end
 
