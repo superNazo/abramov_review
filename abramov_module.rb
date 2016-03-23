@@ -179,7 +179,7 @@ module Abramov
     perfects
   end
 
-  #Krainyk Oleh
+  # Krainyk Oleh
   # Given m and n integers. Compute sum of m last digits of n.
   def abramov_87(n, m)
     res = 0
@@ -190,16 +190,15 @@ module Abramov
       res = val + res
       m -= 1
     end
-
-    puts res
+    res
   end
 
   # Given m and n integers. Compute all least common multiple
   # of m,n that are less than m*n.
   def abramov_226(n, m)
-    for numb in 0..n * m
-      puts numb if (numb % n == 0) && (numb % m == 0)
-    end
+    arr = []
+    (0..n * m).each { |numb| arr << numb if (numb % n == 0) && (numb % m == 0) }
+    arr
   end
 
   # Given n integer. Find all Mersenne prime numbers
@@ -214,12 +213,14 @@ module Abramov
     true
   end
 
-  def abramove559(n)
-  	for numb1 in 1..n
-          for numb2 in 1..n
-            puts numb1 if (prime numb1) && (2**numb2 - 1 == numb1)
-          end
-  	end
+  def abramov_559(n)
+    arr = []
+    for numb1 in 1..n
+      for numb2 in 1..n
+        arr << numb1 if (prime numb1) && (2**numb2 - 1 == numb1)
+      end
+    end
+    arr
   end
 
   # Find a count of a(k), that 2^k < a(k) < k!, where a(1), ... , a(n) is a sequence of integer
