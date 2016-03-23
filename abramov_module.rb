@@ -181,30 +181,24 @@ module Abramov
 
   # Find sum of digits of a number
   def abramov_86a(num)
-    num.to_s.split(//).inject(0) { |sum, n| sum += n.to_i }
+    num.to_s.split(//).inject(:+)
   end
 
   # Count quantity of digits of a number
   def abramov_86b(num)
-    counter = num.to_s.split(//).length
+    num.to_s.split(//).length
   end
 
   # Find the first digit of the number
   def abramov_86c(num)
-    digit = num.to_s.split(//).first
+    num.to_s.split(//).first
   end
 
   # Find all perfect numbers up to the inputed one (max input value - 10 000)
   def abramov_330(num)
     perfects = []
-
-    def is_perf(n)
-      dividers = []
-      (1..Math.sqrt(n)).each { |i| dividers << i << n / i if n % i == 0 }
-      dividers.inject { |sum, n| sum += n } == 2 * n
-    end
-
-    (2..num).each { |n| perfects << n if is_perf(n) }
+    perfect = ->(num) { num == (1..num / 2).select { |i| num % i == 0 }.inject(:+) }
+    (2..num).each { |n| perfects << n if perfect.call(n) }
     perfects
   end
 
