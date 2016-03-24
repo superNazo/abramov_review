@@ -7,6 +7,25 @@ module Abramov
     k - 1
   end
 
+  # 243a
+  def abramov_243a(n)
+    arr = []
+    x = y = 0
+    while x <= Math.sqrt(n)
+      if x**2 + y**2 < n
+        y += 1
+      elsif x**2 + y**2 == n
+        arr.push([x, y])
+        y += 1
+        break
+      else
+        x += 1
+        y = 0
+      end
+    end
+    arr
+  end
+
   # 243b
   def abramov_243b(n)
     arr = []

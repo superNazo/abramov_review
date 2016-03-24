@@ -24,7 +24,7 @@ task_88d:
   author: Anton Romaniv
 task_107:
   description: get even id, s where 4k is less than input (input has to be bigger than 1)
-  author: Evgen Uzhva
+  author: Yevhen Uzhva
 task_178b:
   description: find numbers divisible by 3 and not divisible by 5 from 1 to user's input
   author: Anatolii Ibrahimov
@@ -43,9 +43,12 @@ task_182:
 task_226:
   description: Compute all natural mutual aliquot of two inputs, that are less than m * n. (2 args)
   author: Krainyk Oleg
+task_243a:
+  description: find one pair where y.square + x.square equals input
+  author: Yevhen Uzhva
 task_243b:
   description: find all pairs where y.square + x.square equals input
-  author: Evgen Uzhva
+  author: Yevhen Uzhva
 task_322:
   description: find a number with most deviders within range
   author: Kirilov Kirill
